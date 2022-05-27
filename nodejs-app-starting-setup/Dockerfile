@@ -2,9 +2,12 @@ FROM node
 
 WORKDIR /app
 
-COPY . /app
+# Copy package.json to the container for saving build time
+COPY package.json /app
 
 RUN npm install
+
+COPY . /app
 
 EXPOSE 80
 
