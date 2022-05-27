@@ -10,4 +10,5 @@ EXPOSE 80
 
 CMD ["node", "server.js"]
 
-# dcoker run -p ${localport}:${dockerport} ${hash}
+# docker run -p ${localport}:${dockerport} ${hash}
+# docker run -p 3000:80 ${hash}
