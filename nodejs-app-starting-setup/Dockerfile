@@ -15,3 +15,4 @@ CMD ["node", "server.js"]
 
 # docker run -p ${localport}:${dockerport} ${hash}
 # docker run -p 3000:80 ${hash}
+# By default, if you run a Container without -d, you run in "attached mode
